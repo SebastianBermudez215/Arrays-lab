@@ -1,0 +1,72 @@
+//exercise 1
+
+let songs = ['Intentions', 'Somebody you loved', 'Control', 'Before you go', 'Solace']
+
+console.log(songs[0])
+
+console.log(songs[2])
+
+songs[4] = 'Happy';
+
+let jamFour = songs[3];
+
+console.log(jamFour);
+
+songs.push('LOL');
+
+console.log(songs);
+
+songs.unshift('20 min');
+
+console.log(' ')
+
+console.log(songs);
+
+console.log(songs.length)
+
+songs.pop();
+
+console.log(songs.length)
+
+console.log(' ')
+
+for (let i = 0; i < songs.length; i++) {
+  console.log( `${songs.indexOf(songs[i])}, ${songs[i]}`)
+}
+
+let lastSong = songs.length - 1
+
+//exercise 2
+
+console.log(' ')
+
+
+let numbers = [3, 5, 2 ,7, 1, 0, 9, 4]
+
+function ordered() {
+  console.log(numbers.sort())
+}
+
+//make sure to add the console log INSIDE the function when you call it.
+
+ordered();
+
+//exercise 3
+
+console.log(' ')
+
+let favMovies = [
+  ['action', 'Gemini Man', 'Spiderman 3'],
+  ['psychological', 'Inception', 'Fractured'],
+  ['Spiritual', 'Gods Not Dead', 'I can only imagine'],
+];
+
+console.log(favMovies[2][1]);
+
+console.log(favMovies[1][0]);
+
+for (let i = 0; i < favMovies.length; i++) {
+  for (let k = 0; k < favMovies[i].length; k++) {
+    console.log(favMovies[i][k])
+  }
+}
